@@ -1,0 +1,46 @@
+       OBJECT AND ITS INTERNAL REPRESENTATIONS 
+	            IN JAVASCRIPT
+				
+1. OBJECT is reference datatype which is defined by the user.
+
+2. OBJECT always have data interms of KEY-VALUE pairs.
+
+3.The key value pairs are enclosed within the two curly braces.
+
+4.The value to the key(PROPERTY) is assigned using semicolon(:).
+
+5.The typical object in javascript is represented as 
+       
+	   let object = {
+	        key1 : 'value1',
+			key2 : 'value2'
+			};
+			
+6.The key-values can be added to object from outside the object either by using DOT/BRACKET NOTATIONS.
+        object.key3 = 'value3';
+        object['key4'] = 'value4';
+		
+7.The key-value pair of the object can be removed from object using DELETE keyword.
+        delete object.key4;
+		
+8.To print the its specific property(key) , we should use either dot / bracket notation.
+         console.log(object.key2);
+
+9.If we want to update an existing property(key) , we should declare the property name with required value (re-assigning)
+         object.key1 = 'value1';
+
+10.In object, many properties (keys) can have same value but same property(key)	cannot have many values.
+    In such cases , only the last assigned value will be the value of the object.
+
+
+      Ex :  let pocoF1 = {
+                Brand : [{MainBrand : 'MI' , SubBrand : 'POCO' }],
+                year : 2018,
+                Variant : '6GB/128GB',
+                color : 'blue',
+               	Price : '$249'
+                };				
+				
+            console.log(pocoF1.color);
+			
+            output :  'blue'

@@ -1,0 +1,35 @@
+                             DIFFERENCE BETWEEN HTTP/1.1  AND HTTP/2
+										  
+		HTTP/1.1                                                    HTTP/2
+				 
+1. The client and server communicates                          The client and server communicates after
+     in terms of plain text messages.                            encoding those texts to binary.
+	                                                              (binary framing layer)
+																	
+2. It makes multiple TCP connection                            The binary framing layer encodes request/response
+      to avoid HEAD-OF-LINE blocking                            and cuts it into smaller packets called streams
+     (blocks all headers in queue                                  which would greatly reduce the HOL blocking 
+   if a header cannot retrieve the data)	                          with use of single TCP connection.
+	  which again uses more resources.                              (MULTIPLEXING)                                   
+	                                                                                              															
+3.To avoid buffer overflow , receiver                          Instead of relying on transfer layer (ACK packet)
+    sends the recieve window to sender                          the client and server set their own flow controls
+	 through ACK packet.                                        (APPLICATION LAYER) based on the level of 
+      (TRANSFER LAYER)                                               multiplexed streams.
+	  
+4.It uses RESOURCE INLINING to                                 It uses SERVER PUSH to retrieve additional resources
+   retrieve additional resources if                             if required , together with the requested 
+	required together with                                       resources while maintaining separation 
+	  requested resources.                                       between pushed and requested resources.
+   (but cannot separate the additional
+    resources from requested resources
+	         if its  inlined)
+			 
+5.It uses (gzip) to compress the resources                     It uses (HPACK) which has the ability to compress the 
+    but header files are always sent as                           header frames and can encode the metadata.
+	  plain text which might get heavy with 
+	   too many request for different
+	     resources.
+		 
+		 
+reference : https://www.digitalocean.com/community/tutorials/http-1-1-vs-http-2-what-s-the-difference
