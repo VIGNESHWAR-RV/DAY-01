@@ -1,0 +1,39 @@
+  
+      "PROGRAMMING PARADIGMS"
+
+ PARADIGM - "way of programming"
+ 
+ Most languages nowadays, support multiple ways to approach the solution to the task (or) problem.
+ so these languages can be termed as MULTI-PARADIGM LANGUAGES.
+ 
+ IMPERATIVE PROGRAMMING :
+  
+     If the approach to the solution is defined step by step , then the way is considered as IMPERATIVE PROGRAMMING.
+	 
+	 
+ DECLARATIVE PROGRAMMING :
+ 
+     If the approach to solution defines what you want to get and not the procedures involved in the approach , 
+	    then it is considered as DECLARATIVE PROGRAMMING.
+		
+		
+ STRUCTURED PROGRAMMING :
+ 
+     If the approach to solution consist of nested loops in a structural way , then it is considered as STRUCTURED PROGRAMMING. 
+	 
+	 
+ FUNCTIONAL PROGRAMMING :
+ 
+     If the approach to solution consist of calling funtions to perform operations ,then it called FUNCTIONAL PROGRAMMING.
+	 
+	 
+ LOGICAL PROGRAMMING :
+
+     If the approach to the solution consist of the logical conditions (or) facts to perform operations , then it is known as
+          LOGICAL PROGRAMMING.
+
+
+ OBJECT ORIENTED PROGRAMMING :
+ 
+     If the approach to the solution consist of creating and using objects to perform operations ,then its known as 
+         OBJECT ORIENTED PROGRAMMING>	 

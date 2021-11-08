@@ -1,0 +1,18 @@
+
+       "DIFFERENCE BETWEEN THE PROGRAMMING LANGUAGE AND THE SCRIPTING LANGUAGE"
+	   
+Actually the difference between the programming language and the scripting language 
+ depends on the environment on which he language is writing its codes.
+
+If a language is written over an existing appplication in order to perform necessary operations
+ in the application , then the codes written are called "SCRIPTS" and the language is
+considered as SCRIPTING LANGUAGE. Most of the scripting languages are not compiled into 
+bytecode and interpreted on the run( interpreted in run-time ) as they are often used over 
+an existing applications. Ex : javascript.
+
+If a language is wriiten over the platform(ie operating system && cpu) , then its considered 
+ as PROGRAMMING LANGUAGE.The application that directly work on the operating system are developed 
+the programming languages. These langauages are compiled into bytecode which can be easily executed on 
+ the platforms supporting the languages.Ex : c++,Java,etc... The only disadvantage of those langauages is
+that they predefine the datatypes that can be used in the code else they wont be compiled into bytecode.
+They cant run with dynamic datatypes and thats where scripting languages plays a major role.
